@@ -1,0 +1,377 @@
+@import url(./fonts.scss);
+@import '~bootstrap/scss/bootstrap.scss';
+
+// $h1 : 60px;
+// $h2 : 38px;
+// $h3 : 30px;
+// $h4 : 18px;
+// $h5 : 16px;
+// $h6 : 13px;
+// $p : 10px;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Muli', 'IBMPlexSerif';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app_wrapper {}
+
+.header {}
+
+.header__logo {}
+
+
+.main_section {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    /* max-width: 1440px; */
+    /* margin: 0px 128px; */
+    .main_section__bg_design {
+        float: right;
+        position: absolute;
+        right: 0px;
+        z-index: 1;
+        bottom: -50px;
+    }
+
+    .main_section__row {
+        padding: 24px;
+    }
+}
+
+.main_section__left_section {
+
+    padding-top: 24px;
+
+    .left_section__caption_header {
+        font-size: 18px;
+        color: #85a1ad;
+        font-weight: 600;
+        font-family: "IBMPlexSerif";
+    }
+
+    .left_section__header_text {
+        font-size: 50px;
+        line-height: 50px;
+        margin: 12px 0px 24px 0px;
+        color: #084059;
+        font-weight: 300;
+        font-family: "IBMPlexSerif";
+    }
+
+    .left_section__image_box {
+        max-width: 532px;
+        height: 352px;
+        background-color: #f5f5f5;
+        margin-top: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 36px;
+
+        .image_box__image {
+            margin: 0px auto;
+            position: absolute;
+            bottom: -97px;
+
+        }
+    }
+
+    .left_section__content_box {
+
+        .content_box__caption {
+            font-size: 16px;
+            line-height: 26px;
+            color: #021c25;
+            font-family: "Muli";
+            font-weight: 500;
+        }
+
+        .content_box__points_box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            margin: 12px 0px;
+
+            .points_box__tick {
+                margin-right: 12px;
+            }
+
+            .points_box__label {
+                font-size: 16px;
+                line-height: 26px;
+                color: #021c25;
+                font-weight: 700;
+                font-family: "Muli";
+            }
+        }
+
+        .content_box__bottom_caption {
+            font-size: 16px;
+            line-height: 26px;
+            color: #021c25;
+            font-family: "Muli";
+        }
+    }
+
+
+}
+
+.main_section__right_section {
+    max-width: 480px;
+    filter: drop-shadow(20.229px 50.068px 28.5px rgba(0, 0, 0, 0.17));
+    background-color: #084059;
+    z-index: 2;
+    padding: 32px;
+    height: min-content;
+
+    .right_section__header {
+        font-size: 38px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: "IBM Plex Serif";
+        margin: 12px 0px 8px 12px;
+    }
+
+    .right_section__header_caption {
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        font-family: "Muli";
+        margin: 12px 0px 8px 12px;
+    }
+
+    .right_section__description {
+        font-size: 10px;
+        line-height: 14px;
+        color: #ffffff;
+        font-family: "Muli";
+        margin: 0px 64px 8px 18px;
+        padding: 0px 0px 12px 0px;
+    }
+
+    .right_section__button {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 500;
+        font-family: "IBM Plex Serif";
+        text-align: center;
+        width: 155px;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fc6c32;
+        margin: 0px 0px 0px 12px;
+    }
+
+    .right_section__input_wrapper {
+        display: flex;
+        flex-direction: column;
+
+
+        .input_wrapper__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .input_wrapper__input {
+            outline: none;
+            border-radius: 4px;
+            padding: 12px;
+            font-size: 16px;
+            color: #39667a;
+            border: none;
+            font-family: "Muli";
+            margin: 8px 12px;
+            min-width: 100px;
+
+            ::placeholder {
+                font-size: 16px;
+                color: #39667a;
+            }
+        }
+
+        .input_wrapper__checkbox_wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 12px;
+
+            .checkbox_wrapper__checkbox {
+                width: 18px;
+                height: 18px;
+                background-color: #ffffff;
+                outline: none;
+                border-radius: 4px;
+                color: #39667a;
+                border: none;
+
+            }
+
+            .checkbox_wrapper__label {
+                font-size: 13px;
+                margin-left: 8px;
+                color: #ffffff;
+                font-family: "Muli";
+            }
+
+
+        }
+    }
+
+}
+
+
+
+.bottom_section {
+    width: 100%;
+    height: 402px;
+    background-color: #084059;
+    margin: 24px 0px;
+    position: relative;
+    z-index: 2;
+
+    .bottom_section__bg_image {
+        position: absolute;
+        right: 0;
+    }
+
+    .bottom_section__text {
+        padding: 36px 42px;
+        font-size: 30px;
+        line-height: 42px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "IBM Plex Serif";
+    }
+
+    .bottom_section__author {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 24px;
+
+        .bottom_section__author__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 74px;
+            height: 74px;
+            border-radius: 37px;
+            background-color: #ffffff;
+            margin-right: 18px;
+        }
+
+        .bottom_section__author__text {
+            margin-bottom: 8px;
+            font-size: 18px;
+            letter-spacing: 0px;
+            line-height: 25px;
+            color: #ffffff;
+            font-family: "Muli";
+        }
+    }
+}
+
+.footer_section {
+    padding: 0px 0px 24px 64px;
+
+    .footer_section_copyright_text {
+        font-size: 12px;
+        color: #021c25;
+        font-family: "Muli";
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main_section .main_section__row {
+        justify-content: start !important;
+    }
+ }
+
+
+ 
+@media (max-width: 425px) {
+    .app_wrapper {
+        padding: 0px;
+    }
+    .header {
+        padding: 24px 0px !important;
+        margin: 0px 0px 0px 24px !important;
+    }
+    
+    .main_section  {
+        padding: 0px !important;
+        .main_section__row {
+            
+            justify-content: center !important;
+        }
+        .main_section__left_section {
+            padding: 0px !important;
+        }
+        .main_section__left_section .left_section__header_text {
+            font-size: 42px;
+        }
+        .main_section__left_section .left_section__image_box {
+            margin: 0px;
+            margin-bottom: 24px;
+        }
+        .main_section__right_section {
+            padding-left: 12px !important;
+        }
+    }
+    .bottom_section {
+        height: min-content;
+        .bottom_section__bg_image {
+            display: none;
+        }
+        .bottom_section .bottom_section__row {
+            padding: 0px !important;
+        }
+        .bottom_section__text {
+            padding: 0px !important;
+            line-height: 36px;
+        }
+        .bottom_section__author {
+            padding: 0px;
+            margin: 0px;
+            margin-top: 24px;
+        }
+    }
+ }
+
+
+ 
+@media (max-width: 320px) {
+    .main_section .main_section__row {
+        padding: 12px !important;
+    }
+    .main_section__right_section .right_section__input_wrapper .input_wrapper__input {
+        min-width: 80px;
+        margin: 4px;
+    
+    }
+    .main_section .main_section__right_section {
+        padding: 4px;
+    }
+ }

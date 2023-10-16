@@ -18,9 +18,9 @@ const LandingPage = () => {
                     <img className='header__logo ' src={logo} alt='app_logo' />
                 </div>
             </div>
-
+            <img src={background_design} alt='bg_design' className='main_section__bg_design' />
             <div className='main_section container'>
-                <img src={background_design} alt='bg_design' className='main_section__bg_design' />
+
                 <div className='main_section__row row justify-content-evenly align-items-start'>
                     <div className='main_section__left_section col-lg-6 col-md-12'>
                         <div className='left_section__caption_header'>eGuide</div>
@@ -53,38 +53,38 @@ const LandingPage = () => {
                             Please fill out the fields below
                         </div>
                         <div className='formContainer'>
-                            <div className='right_section__input_wrapper'>
-                                <div className='input_wrapper__row'>
-                                    <input className='input_wrapper__input' placeholder='First name*' />
-                                    <input className='input_wrapper__input' placeholder='Last name*' />
-                                </div>
-                                <input className='input_wrapper__input' placeholder='Email Address*' />
-                                <input className='input_wrapper__input' placeholder='Phone Number*' />
-                                <div className='input_wrapper__row'>
-                                    <select className="input_wrapper__input form-select" aria-label="Default select example" placeholder='Job Title*'>
-                                        <option selected>Job Title*</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                    <select className="input_wrapper__input form-select" aria-label="Default select example" placeholder='Industry*'>
-                                        <option selected>Industry*</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div className='input_wrapper__checkbox_wrapper'>
-                                    <input className='checkbox_wrapper__checkbox' type='checkbox' />
-                                    <span className='checkbox_wrapper__label'>Lorem ipsum dolor sit amet, consectetur</span>
-                                </div>
-                            </div>
-                            <div className='right_section__description'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
-                            </div>
-                            <div className='right_section__button'>
-                                Download
-                            </div>
+                            {/*<div className='right_section__input_wrapper'>*/}
+                            {/*    <div className='input_wrapper__row'>*/}
+                            {/*        <input className='input_wrapper__input' placeholder='First name*' />*/}
+                            {/*        <input className='input_wrapper__input' placeholder='Last name*' />*/}
+                            {/*    </div>*/}
+                            {/*    <input className='input_wrapper__input' placeholder='Email Address*' />*/}
+                            {/*    <input className='input_wrapper__input' placeholder='Phone Number*' />*/}
+                            {/*    <div className='input_wrapper__row'>*/}
+                            {/*        <select className="input_wrapper__input form-select" aria-label="Default select example" placeholder='Job Title*'>*/}
+                            {/*            <option selected>Job Title*</option>*/}
+                            {/*            <option value="1">One</option>*/}
+                            {/*            <option value="2">Two</option>*/}
+                            {/*            <option value="3">Three</option>*/}
+                            {/*        </select>*/}
+                            {/*        <select className="input_wrapper__input form-select" aria-label="Default select example" placeholder='Industry*'>*/}
+                            {/*            <option selected>Industry*</option>*/}
+                            {/*            <option value="1">One</option>*/}
+                            {/*            <option value="2">Two</option>*/}
+                            {/*            <option value="3">Three</option>*/}
+                            {/*        </select>*/}
+                            {/*    </div>*/}
+                            {/*    <div className='input_wrapper__checkbox_wrapper'>*/}
+                            {/*        <input className='checkbox_wrapper__checkbox' type='checkbox' />*/}
+                            {/*        <span className='checkbox_wrapper__label'>Lorem ipsum dolor sit amet, consectetur</span>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
+                            {/*<div className='right_section__description'>*/}
+                            {/*    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.*/}
+                            {/*</div>*/}
+                            {/*<div className='right_section__button'>*/}
+                            {/*    Download*/}
+                            {/*</div>*/}
                         </div>
 
                     </div>

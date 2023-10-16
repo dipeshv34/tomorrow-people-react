@@ -27,6 +27,15 @@ body {
 
 .app_wrapper {
     padding: 0px !important;
+    position: relative;
+    overflow-x: hidden;
+    .main_section__bg_design {
+        float: right;
+        position: absolute;
+        right: 0px;
+        z-index: 1;
+        top: 30%;
+    }
 }
 
 .header {}
@@ -41,13 +50,6 @@ body {
 
     /* max-width: 1440px; */
     /* margin: 0px 128px; */
-    .main_section__bg_design {
-        float: right;
-        position: absolute;
-        right: 0px;
-        z-index: 1;
-        bottom: -50px;
-    }
 
     .main_section__row {
         padding: 24px;

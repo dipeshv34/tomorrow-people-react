@@ -18,9 +18,8 @@ const LandingPage = () => {
                     <img className='header__logo ' src={logo} alt='app_logo' />
                 </div>
             </div>
-
+            <img src={background_design} alt='bg_design' className='main_section__bg_design' />
             <div className='main_section container'>
-                <img src={background_design} alt='bg_design' className='main_section__bg_design' />
                 <div className='main_section__row row justify-content-evenly align-items-start'>
                     <div className='main_section__left_section col-lg-6 col-md-12'>
                         <div className='left_section__caption_header'>eGuide</div>

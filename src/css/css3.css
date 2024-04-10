@@ -1,0 +1,117 @@
+.typTemplate .footer__legal {
+    border-top: 1px solid #d9d9d9;
+  }
+
+  .footer {
+    background: var(--white)
+  }
+
+  .footer__ul {
+    padding: 0;
+    margin: 0;
+    list-style: none
+  }
+
+  .footer__li {
+    margin-bottom: 12px
+  }
+
+  .footer__li:first-child {
+    margin-bottom: 15px
+  }
+
+  .footer__li:first-child a {
+    color: var(--text-body)
+  }
+
+  .footer__link {
+    color: var(--text-body)
+  }
+
+  .footer__link[href=""] {
+    cursor: default;
+    pointer-events: none
+  }
+
+  .footer__link.active,
+  .footer__link:hover {
+    color: var(--brand-secondary)
+  }
+
+  .footer__legal {
+    padding: 16px 0
+  }
+
+  @media (min-width: 768px) {
+    .footer__legal {
+      border-top: 1px solid #d9d9d9;
+    }
+    .footer__legal {
+      padding: 30px 0
+    }
+  }
+
+  .footer__legal-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+
+  @media (min-width: 992px) {
+    .footer__legal-ul {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start
+    }
+  }
+
+  .footer__legal-li {
+    margin: 0 10px 20px 10px;
+    font-size: calc(12px + 0 * ((100vw - 576px) / 1024));
+    line-height: 1.5em;
+    color: var(--text-body)
+  }
+
+  @media screen and (max-width: 576px) {
+    .footer__legal-li {
+      font-size: 12px
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    .footer__legal-li {
+      font-size: 12px
+    }
+  }
+
+  @media (min-width: 768px) {
+    .footer__legal-li {
+      margin: 0 20px 0 0
+    }
+  }
+
+  @media (max-height: 700px) {
+    .footer__legal-li {
+      font-size: calc(12px + 0 * ((100vw - 576px) / 1024))
+    }
+  }
+
+  @media screen and (max-height: 700px) and (max-width: 576px) {
+    .footer__legal-li {
+      font-size: 12px
+    }
+  }
+
+  @media screen and (max-height: 700px) and (min-width: 1600px) {
+    .footer__legal-li {
+      font-size: 12px
+    }
+  }

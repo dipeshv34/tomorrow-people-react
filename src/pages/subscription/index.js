@@ -77,8 +77,8 @@ const SubsCription = () => {
                                                                         <h4>Your email</h4>
                                                                         <p id="emailValue">example@email.com</p>
                                                                     </div>
-                                                                    <div style={styleCss}>
-                                                                        {showEmail && <input name="email" type="email" value="example@gmail.com" />}
+                                                                    <div>
+                                                                        {showEmail && <input name="email" type="email" value="example@gmail.com"  style={styleCss}/>}
                                                                     </div>
                                                                     <div className="prefsForm__email__field">
                                                                         <button 

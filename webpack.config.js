@@ -1,12 +1,24 @@
-const path = require("path");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HubSpotAutoUploadPlugin = require('@hubspot/webpack-cms-plugins/HubSpotAutoUploadPlugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
+const autoprefixer = require('autoprefixer');
 
-module.exports = {
-  entry: "./src/index.js",
-  output: {
-    path: path.join(__dirname, "public"),
-    filename: "bundle.js",
-  },
-  module: {
+
+const hubspotConfig = ({ portal, autoupload } = {}) => {
+  return {
+    target: 'web',
+    entry: {
+      main: './src/index.js',
+    },
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: '[name].js',
+    },
+    optimization: {
+      minimize: false,
+    },
+    module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
@@ -46,4 +58,27 @@ module.exports = {
       },
     ],
   },
+    plugins: [
+      new HubSpotAutoUploadPlugin({
+        portal,
+        autoupload,
+        src: 'dist',
+        dest: 'cms-react-boilerplate',
+      }),
+      new MiniCssExtractPlugin({
+        filename: '[name].css',
+      }),
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: 'src/images', to: 'images' },
+          {
+            from: 'src/modules',
+            to: 'modules',
+          },
+        ],
+      }),
+    ],
+  };
 };
+
+module.exports = [hubspotConfig];

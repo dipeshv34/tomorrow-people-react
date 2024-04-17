@@ -3,6 +3,7 @@ import Footer from '../../component/footer';
 import '../../css/css1.css';
 import '../../css/css2.css';
 import '../../css/css3.css';
+import Navbar from "../../component/navbar";
 
 const ThankYou = () => {
 
@@ -19,11 +20,14 @@ const ThankYou = () => {
                                     <div className="container">
                                         <div className="row header__row align-items-center justify-content-between">
 
-                                            <div className="col-12 col-xl-2">
+                                            <div className="col-12 col-xl-2" style={{"display":"contents"}}>
                                                 <div className="header__brand">
                                                     <a href="https://peruconsulting.co.uk/" target="_blank">
                                                         <img src="https://139544704.fs1.hubspotusercontent-eu1.net/hubfs/139544704/onboarding-templates/per-logo-white.svg" alt="logo" />
                                                     </a>
+                                                </div>
+                                                <div style={{"color":"white"}}>
+                                                    <Navbar/>
                                                 </div>
                                             </div>
 

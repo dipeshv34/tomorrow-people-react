@@ -4,6 +4,9 @@ import book_image from '../../assets/images/book_image.svg';
 import tick from '../../assets/images/tick.svg';
 import background_design from '../../assets/images/bg_design.svg';
 import bottom_section_bg_transparent from '../../assets/images/bottom_section_bg_transparent.svg';
+import Navbar from '../../component/navbar';
+import Footer from "../../component/footer";
+import React from "react";
 
 
 const LandingPage = () => {
@@ -15,6 +18,7 @@ const LandingPage = () => {
                 <div className='header  text-start p-4 mx-4'>
                     <img className='header__logo ' src={logo} alt='app_logo' />
                 </div>
+                <Navbar />
             </div>
             <img src={background_design} alt='bg_design' className='main_section__bg_design' />
             <div className='main_section container'>

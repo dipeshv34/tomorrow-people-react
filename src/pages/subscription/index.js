@@ -3,6 +3,7 @@ import Footer from '../../component/footer';
 import '../../css/css1.css';
 import '../../css/css2.css';
 import '../../css/css3.css';
+import Navbar from "../../component/navbar";
 
 const styleCss = {
     "border": '2px solid #084059',
@@ -29,12 +30,13 @@ const SubsCription = () => {
                                     <div className="container">
                                         <div className="row header__row align-items-center justify-content-between">
 
-                                            <div className="col-12 col-xl-2">
+                                            <div className="col-12 col-xl-2" style={{"display":"contents"}}>
                                                 <div className="header__brand">
 
                                                     <img src="https://139544704.fs1.hubspotusercontent-eu1.net/hubfs/139544704/onboarding-templates/per-logo-colour.svg" alt="logo" />
 
                                                 </div>
+                                                <Navbar/>
                                             </div>
 
                                         </div>

@@ -5,6 +5,7 @@ import tick from '../assets/images/tick.svg';
 import background_design from '../assets/images/bg_design.svg';
 import bottom_section_bg_transparent from '../assets/images/bottom_section_bg_transparent.svg';
 import Footer from '../../component/footer';
+import Navbar from '../../component/navbar';
 
 
 const LandingPage = () => {
@@ -15,6 +16,7 @@ const LandingPage = () => {
             <div className='header_container container'>
                 <div className='header  text-start p-4 mx-4'>
                     <img className='header__logo ' src={logo} alt='app_logo' />
+                    <Navbar />
                 </div>
             </div>
             <img src={background_design} alt='bg_design' className='main_section__bg_design' />
@@ -22,7 +24,7 @@ const LandingPage = () => {
 
                 <div className='main_section__row row justify-content-evenly align-items-start'>
                     <div className='main_section__left_section col-lg-6 col-md-12'>
-                        <div className='left_section__caption_header'>eGuide</div>
+                        <div className='left_section__caption_header'>eGuidejjj</div>
                         <div className='left_section__header_text'>Use Architecture the <br /> clever way.</div>
                         <div className='left_section__image_box'>
                             <img className='image_box__image' src={book_image} alt='book_image'></img>

@@ -12,6 +12,8 @@
     "postcss": "^8.4.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.1.0",
+    "react-responsive": "^10.0.0",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "regenerator-runtime": "^0.13.3",
@@ -21,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build2": "react-scripts build",
-    "build": "rm -Rf dist && webpack --mode production --config webpack.config.js",
+    "build": "rm -Rf dist && webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "scss": "gulp sass"

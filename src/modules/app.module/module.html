@@ -1,0 +1,23 @@
+{{ require_css(get_asset_url('../../main.css')) }}
+{{ require_js(get_asset_url('../../main.js'), 'footer') }}
+{%- set instance_id = name %}
+
+<div class="cms-react-boilerplate">
+  <script type="application/json"
+    data-module-instance="{{ instance_id }}"
+    data-portal-id="{{ portal_id }}">
+      {module|tojson }
+  </script>
+
+  <div id="App--{{ instance_id }}"></div>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+      region: "na1",
+      portalId: "372424",
+      formId: "f2574a68-26c9-40ab-b17e-391d680ac6d3",
+      target: ".formContainer",
+      css: ""
+    });
+  </script>
+</div>

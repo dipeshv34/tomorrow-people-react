@@ -1,8 +1,8 @@
 import React from 'react';
 import Footer from '../../component/footer';
-import '../../css/css1.css';
-import '../../css/css2.css';
-import '../../css/css3.css';
+import '../../scss/scss1.scss';
+import '../../scss/scss2.scss';
+import '../../scss/scss3.scss';
 
 const SubscriptionConfirmation = () => {
 

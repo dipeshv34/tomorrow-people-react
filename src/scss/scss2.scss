@@ -1,0 +1,62 @@
+$color-text-body: var(--text-body); // Assuming you're using CSS variables, you could alternatively define these in SCSS if preferred.
+$brand-primary: var(--brand-primary);
+
+.typCtas {
+    overflow: hidden;
+    padding: 90px 20px 70px;
+  
+    @media (min-width: 992px) {
+      padding: 110px 0 100px;
+  
+      .insertResourceCard {
+        width: 32%;
+      }
+    }
+  
+    &__text {
+      margin-bottom: 80px;
+  
+      h1,
+      h2 {
+        color: $brand-primary;
+        margin-bottom: 20px;
+        font-size: calc(40px + 10 * ((100vw - 576px) / 1024));
+  
+        @media screen and (max-width: 576px) {
+          font-size: 40px;
+        }
+  
+        @media screen and (min-width: 1600px) {
+          font-size: 50px;
+        }
+      }
+  
+      p {
+        color: var(--text-body);
+        margin-bottom: 25px;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+  
+      ul {
+        padding-left: 20px;
+        margin-bottom: 20px;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+  
+        @media (min-width: 992px) {
+          padding-left: 40px;
+        }
+  
+        li {
+          color: $color-text-body;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  

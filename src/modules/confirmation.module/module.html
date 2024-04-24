@@ -2,15 +2,14 @@
 {{ require_js(get_asset_url('../../main.js'), 'footer') }}
 {%- set instance_id = name %}
 
-<div class="cms-react-boilerplate-confirmation">
+<div class="cms-react-boilerplate">
   <script type="application/json"
     data-module-instance="{{ instance_id }}"
     data-portal-id="{{ portal_id }}">
-      {module|tojson }
+      {{ module|tojson }}
   </script>
-
-  <div id="Confirmation--{{instance_id}}"></div>
-  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+  <div id="Confirmation--{{ instance_id }}"></div>
+  <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
   <script>
     hbspt.forms.create({
       region: "na1",
@@ -19,5 +18,5 @@
       target: ".formContainer",
       css: ""
     });
-  </script>
+  </script> -->
 </div>

@@ -6,7 +6,7 @@ import ConfirmationMain from './Confirmation-Main'
 import ErrorBoundary from './components/ErrorBoundary';
 
 const targetModulesData = document.querySelectorAll(
-  '.cms-react-boilerplate-confirmation > script[type="application/json"]',
+  '.cms-react-boilerplate > script[type="application/json"]',
 );
 targetModulesData.forEach(({ dataset, textContent }) => {
   const root = document.getElementById(`Confirmation--${dataset.moduleInstance}`);

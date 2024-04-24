@@ -9,7 +9,7 @@ const targetModulesData = document.querySelectorAll(
   '.cms-react-boilerplate-confirmation > script[type="application/json"]',
 );
 targetModulesData.forEach(({ dataset, textContent }) => {
-  const root = document.getElementById(`App--${dataset.moduleInstance}`);
+  const root = document.getElementById(`Confirmation--${dataset.moduleInstance}`);
   return ReactDOM.render(
     <ErrorBoundary>
       <ConfirmationMain

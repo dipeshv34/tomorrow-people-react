@@ -1,6 +1,23 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Confirmation from './pages/confirmation';
+import ConfirmationMain from './Confirmation-Main'
+import ErrorBoundary from './components/ErrorBoundary';
 
-const root = ReactDOM.createRoot(document.getElementById(`root`));
-root.render(<Confirmation />);
+const targetModulesData = document.querySelectorAll(
+  '.cms-react-boilerplate-confirmation > script[type="application/json"]',
+);
+targetModulesData.forEach(({ dataset, textContent }) => {
+  const root = document.getElementById(`App--${dataset.moduleInstance}`);
+  return ReactDOM.render(
+    <ErrorBoundary>
+      <ConfirmationMain
+        portalId={dataset.portalId}
+        moduleData={JSON.parse(textContent)}
+        moduleInstance={dataset.moduleInstance}
+      />
+    </ErrorBoundary>,
+    root,
+  );
+});

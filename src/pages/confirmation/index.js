@@ -1,8 +1,6 @@
+import '../../scss/index.scss';
 import React from 'react';
 import Footer from '../../component/footer';
-import '../../scss/scss1.scss';
-import '../../scss/scss2.scss';
-import '../../scss/scss3.scss';
 
 const SubscriptionConfirmation = () => {
 
@@ -37,6 +35,8 @@ const SubscriptionConfirmation = () => {
 
                 </div>
             </div>
+
+            <div className='formContainer'></div>
 
             <div className="body-container-wrapper" style={{ "paddingBottom": "45px" }}>
                 <div className="body-container container-fluid">

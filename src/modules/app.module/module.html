@@ -6,9 +6,8 @@
   <script type="application/json"
     data-module-instance="{{ instance_id }}"
     data-portal-id="{{ portal_id }}">
-      {module|tojson }
+      {{ module|tojson }}
   </script>
-
   <div id="App--{{ instance_id }}"></div>
   <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
   <script>

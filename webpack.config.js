@@ -19,45 +19,35 @@ const hubspotConfig = ({ portal, autoupload } = {}) => {
       minimize: false,
     },
     module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-react", "@babel/preset-env"],
+      rules: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
           },
         },
-      },
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "style-loader",
-          },
-          {
-            loader: "css-loader",
-            options: {
-              sourceMap: true,
+        {
+          test: /\.s[ac]ss$/i,
+          use: [
+            MiniCssExtractPlugin.loader,
+            { loader: 'css-loader', options: { url: false } },
+            {
+              loader: 'postcss-loader',
             },
-          },
-          {
-            loader: "sass-loader",
-            options: {
-              sourceMap: true,
+            'sass-loader',
+          ],
+        },
+        {
+          test: /\.(svg)$/,
+          use: [
+            {
+              loader: 'url-loader',
             },
-          },
-        ],
-      },
-      { test: /\.css$/, use: ["style-loader", "css-loader"] },
-      {
-        test: /\.(gif|svg|jpg|png)$/,
-        loader: "file-loader",
-      },
-    ],
-  },
+          ],
+        },
+      ],
+    },
     plugins: [
       new HubSpotAutoUploadPlugin({
         portal,

@@ -1,4 +1,5 @@
 import '../scss/index.scss';
+import React from 'react';
 
 const Footer = ({showLine}) => {
     return (

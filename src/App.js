@@ -1,5 +1,5 @@
 import React from 'react';
-import Confirmation from './pages/confirmation';
+import Confirmation from './confirmation';
 
 function App({ moduleData }) {
   // eslint-disable-next-line no-console

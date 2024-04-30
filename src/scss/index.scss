@@ -259,6 +259,7 @@ body {
     .bottom_section__bg_image {
         position: absolute;
         right: 0;
+        z-index: -1;
     }
 
     .bottom_section__text {

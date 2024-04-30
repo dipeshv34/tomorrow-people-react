@@ -18,3 +18,6 @@ targetModulesData.forEach(({ dataset, textContent }) => {
         root,
     );
 });
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App />);

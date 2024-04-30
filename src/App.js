@@ -1,5 +1,5 @@
 import React from 'react';
-import SubsCription from './SubsCription';
+import ThankYou from './ThankYou';
 
 function App({ moduleData }) {
   // eslint-disable-next-line no-console
@@ -9,7 +9,7 @@ function App({ moduleData }) {
   );
   return (
     <div className="cms-react-boilerplate__container">
-      <SubsCription />
+      <ThankYou />
     </div>
   );
 }
